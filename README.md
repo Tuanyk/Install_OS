@@ -1,3 +1,5 @@
+# This repository is to automate the setup process (Debian 12)
+
 # Add user to sudoers on Debian
 
 On Debian 12, logout and login as root
