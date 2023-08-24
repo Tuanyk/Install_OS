@@ -6,3 +6,9 @@ curl -fsSL https://download.opensuse.org/repositories/home:lamlng/Debian_12/Rele
 sudo apt update
 sudo apt install ibus-bamboo
 ibus engine Bamboo
+
+# THIS CODE IS FOR KDE PLASMA -> WORK GREAT, I CAN TYPE VIETNAMESE EVERYWHERE, FINALLY, AFTER 2 YEARS =)))))
+FILE_PATH=~/.config/plasma-workspace/env/ibus_env.sh
+CONTENT="#!/bin/bash\nexport GTK_IM_MODULE=ibus\nexport XMODIFIERS=@im=ibus\nexport QT_IM_MODULE=ibus"
+echo -e "$CONTENT" > "$FILE_PATH"
+chmod +x "$FILE_PATH"
